@@ -2,4 +2,8 @@
 ÄãºÃ
 hahahah
 hello word!
-my name is alice!
+<<<<<<< HEAD
+my name is mary!
+=======
+my name is mary!
+>>>>>>> feature
