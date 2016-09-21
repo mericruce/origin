@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>问答论坛</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-whith,initial-scale=1,maximun-scale=1.0,user-scalable=no">
+   <link rel="stylesheet" type="text/css" href="css/front-end.css">
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+   <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+
+					<nav id="nav" class="navbar navbar-default navbar-inverse navbar-fixed-top">  
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">筑梦者</a>
+				</div>
+				
+				
+			
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#dsj">大前端</a></li>
+						<li><a href="#dqd">大数据</a></li>
+						<!-- <li class="dropdown">
+						    <a href="#" id="qt" class="dropdown-toggle" data-toggle="dropdown">
+								其他
+								<b class="caret"></b>
+						    </a>
+						    <ul class="dropdown-menu " role = "menu" >
+						    	<li><a href="#rt" tabindex="-1">热帖</a></li>
+						    	<li class="divider"></li>
+						    	<li><a href="#rw" tabindex="-1">热问</a></li>
+						    </ul>
+						</li> -->
+					</ul>
+					
+					<ul class="nav navbar-nav pull-right">
+					    <li><a href="#" id="login">登录</a></li>
+						<li class=""><a href="#" id="register">注册</a></li>
+						<li>
+							<ul class="nav navbar-nav">
+					            <li class="dropdown">
+					            	<a class="dropdown-toggle" data-toggle="dropdown" href="" >个人中心<span class="caret"></span></a>
+					            	<ul class="dropdown-menu" role="menu">
+					            		<li><a class="" tabindex="-1" href="">个人资料</a></li>
+					            		<li><a href="" tabindex="-1">修改密码</a></li>
+					            		<li><a href="" tabindex="-1">曾发布帖子</a></li>
+					            		<li><a href="" tabindex="-1">参与的帖子</a></li>
+					            		<li class="divider"></li>
+					            		<li><a href="" tabindex="-1">通知 <span class="glyphicon glyphicon-envelope"></span></a></li>
+					            		<li><a href="" tabindex="-1">消息 <span class="glyphicon glyphicon-envelope"></a></span></li>
+					            		
+					            	</ul>
+					            </li>
+				            </ul>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+
+
+				<!--  登录  -->
+			<div class="modal fade" id="modalLogin">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						    <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+							<h3 class="text-center modal-title">登录</h3>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal">
+							    <!--  User  -->
+								<div class="form-group">
+				            		<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1  control-label"><span class="glyphicon glyphicon-user"></span></label>
+				            		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 has-feedback">
+				            			<input class="form-control" type="text" placeholder="User" name="username" maxlength="20"/>
+				            		</div>	
+				            	</div>
+								<!--  密码  -->
+				            	<div class="form-group">
+				            		<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-lock"></span></label>
+				            		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 has-feedback">
+				            			<input class="form-control" type="password" placeholder="Password" name="password" maxlength="20"/>
+				            		</div>	
+				            	</div>
+								
+
+
+				            	<!-- <div class="form-group pull-right clearfix">
+				            		<label class="checkbox">
+				            			<input type="checkbox" name="remember" value="1"/> 记住账号
+				            		</label>
+				            		<a href="javascript:;" id="register_btn" class="">点击注册新账号</a>
+				            	</div> -->
+				            	<div class="form-group clearfix text-center">
+				            		<input type="submit" class="btn btn-danger" value="点击登录 " />
+				            	</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+					<!--  注册  -->
+			<div class="modal fade" id="modalRegister">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						    <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+							<h3 class="text-center modal-title">快速注册</h3>
+						</div>
+						<div class="modal-body">
+
+							<div class="tabbable tabs-left" id="tabbable">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab11" data-toggle="tab">邮箱注册</a></li>
+									<li><a href="#tab22" data-toggle="tab">手机注册</a></li>
+								</ul>
+								<div class="tab-content">
+										<div class="tab-pane active" id="tab11">
+										    <div class="panel">
+										    	<div class="panel-body">
+												    <form class="form-horizontal">
+										            	
+										            	 <!--  邮箱注册  -->
+										                <div class="form-group">
+							                        	    	<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-envelope"></span></label>
+							                        	    	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 has-feedback">
+							                        	    		<input class="form-control" type="email" placeholder="Email" name="email"/>
+							                        	    	</div>	
+							                            </div>
+							                            <div class="form-group">
+							                        	    	<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-lock"></span></label>
+							                        	    	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 has-feedback">
+							                        	    		<input class="form-control" type="password" placeholder="Password" name="password"/>
+							                        	    	</div>
+							                        	</div>
+							                        	<div class="form-group">
+							                        	    	<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-lock"></span></label>
+							                        	    	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 has-feedback">
+							                        	    		<input class="form-control" type="password" placeholder="PasswordAgain" name="password2"/>
+							                        	    	</div>
+							                        	</div>
+							                        	<div class="text-center">
+							                        	     <a class="btn btn-danger" href="">注册</a>
+							                        	</div>
+										            
+									            	</form>
+										    	</div>
+										    </div>	        
+										</div>
+
+									<div class="tab-pane" id="tab22">
+										<!-- 手机注册  -->
+										<div class="panel">
+									    	<div class="panel-body">
+											    <form class="form-horizontal">
+									            	
+									            	<div class="form-group">
+						                        	    	<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-phone"></span></label>
+						                        	    	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 has-feedback">
+						                        	    		<input class="form-control" type="text" placeholder="PhoneNumber" name="telephone"/>
+						                        	    	</div>
+						                        	    	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						                        	    		<button class="btn btn-success">短信验证</button>
+						                        	    	</div>
+						                        	    	
+						                        	</div>
+						                        	<div class="form-group">
+						                        		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-3 col-xs-offset-3 " >
+						                        			<input class="form-control" placeholder="短信验证码" type="text" name="">
+						                        		</div>
+						                        		
+						                        		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 ">
+						                        			<button class="btn btn-success">重新获取</button>
+						                        		</div>
+						                        	</div>
+						                        	<div class="form-group">
+						                        	    	<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-lock"></span></label>
+						                        	    	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 has-feedback">
+						                        	    		<input class="form-control" type="password" placeholder="Password" name="password"/>
+						                        	    	</div>
+						                        	</div>
+						                        	<div class="form-group">
+						                        	    	<label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-xs-offset-1 control-label"><span class="glyphicon glyphicon-lock"></span></label>
+						                        	    	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 has-feedback">
+						                        	    		<input class="form-control" type="password" placeholder="PasswordAgain" name="password2"/>
+						                        	    	</div>
+						                        	</div>
+						                        	<div class="text-center">
+						                        	     <a class="btn btn-danger" href="">注册</a>
+						                        	</div>
+									            	
+								            	</form>
+									    	</div>
+									    </div>
+									</div>
+								</div>
+							</div>
+	
+
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="row">
+			<div class="col-lg-12 ">
+			 	<div class="panel">
+			 		<div class="panel-heading">
+			 			<div class="panel-title">
+			 				<p class="t-h">前端风云榜</p>
+			 			</div>
+			 		</div>	
+			 		<div class="panel-body" style="height:465px">	
+					 	 <div class="row h">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 h">
+								<div class="panel zqdn" >
+								   
+					            	<div class="panel-body row h" >
+					            		<div class="zq center-block"></div>
+					            		<div class="zq-n a col-lg-12 " >
+					            			<div class="name"><a href="">迷路的麋鹿</a></div>
+					            			<p>擅长的区域：<a href="">HTML5 CSS3 jQuery Angular.js </a></p>
+					            			<p>活跃度：<span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					            			<p>最近回答的问题：</p>
+					            			<p><a href="">天多高？</a></p>
+					            			
+					            		    <p class="center-block text-center"><button class="btn btn-primary">向他提问</button></p>
+					            		</div>
+
+					            	</div>
+					            </div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 h" >
+								<div class="panel zqdn" >
+					            	<div class="panel-body row h">
+					            		<div class="zq center-block"></div>
+					            		<div class="zq-n b col-lg-12">
+					            			<div class="name"><a href="">迷路的麋鹿</a></div>
+					            			<p>擅长的区域：<a href="">HTML5 CSS3 jQuery Angular.js </a></p>
+					            			<p>活跃度：<span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					            			<p>最近回答的问题：</p>
+					            			<p><a href="">天多高？</a></p>
+					            			
+					            		    <p class="center-block text-center"><button class="btn btn-primary">向他提问</button></p>
+					            		</div>
+
+					            	</div>
+					            </div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 h" >
+								<div class="panel zqdn" >
+					            	<div class="panel-body row h">
+					            		<div class="zq center-block"></div>
+					            		<div class="zq-n c col-lg-12">
+					            			<div class="name"><a href="">迷路的麋鹿</a></div>
+					            			<p>擅长的区域：<a href="">HTML5 CSS3 jQuery Angular.js </a></p>
+					            			<p>活跃度：<span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					            			<p>最近回答的问题：</p>
+					            			<p><a href="">天多高？</a></p>
+					            			
+					            		    <p class="center-block text-center"><button class="btn btn-primary">向他提问</button></p>
+					            		</div>
+
+					            	</div>
+					            </div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 h" >
+								<div class="panel zqdn" >
+					            	<div class="panel-body row h">
+					            		<div class="zq center-block"></div>
+					            		<div class="zq-n d col-lg-12">
+					            			<div class="name"><a href="">迷路的麋鹿</a></div>
+					            			<p>擅长的区域：<a href="">HTML5 CSS3 jQuery Angular.js </a></p>
+					            			<p>活跃度：<span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					            			<p>最近回答的问题：</p>
+					            			<p><a href="">天多高？</a></p>
+					            			
+					            		    <p class="center-block text-center"><button class="btn btn-primary">向他提问</button></p>
+					            		</div>
+
+					            	</div>
+					            </div>
+							</div>
+						 </div>
+					</div>
+			 	</div>
+				         
+			 </div>
+			
+		</div>
+		<div class="row">
+			<div class="col-lg-12 ">
+				<div class="row ">
+
+					<div class="col-lg-2 col-md-2 col-sm-2 top">
+					  <div class="panel">
+					   <div class="panel-body">
+					    <p class="t-h">分类导航</p>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<ul>
+									<p class="t-p">技术分类</p>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#" >CSS</a></li>
+									<li><a href="#">Javascript</a></li>
+									<li><a href="#">jQuery</a></li>
+									<li><a href="#">Angular.js</a></li>
+									<li><a href="#">node.js</a></li>
+									<li><a href="#">bootstrap</a></li>
+								</ul>
+							</div>
+
+					  </div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<ul>
+									<p class="t-p">帖子分类</p>
+									<li><a href="#">分享帖</a></li>
+									<li><a href="#">求助帖</a></li>
+									<li><a href="#">活动贴</a></li>
+									<li><a href="#" >悬赏贴</a></li>
+									<li><a href="#">展示贴</a></li>
+									<li><a href="#">教程贴</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<ul>
+									<p class="t-p">时间分类</p>
+									<li><a href="#">2016</a></li>
+									<li><a href="#" >2017</a></li>
+									<li><a href="#" >2018</a></li>
+									<li><a href="#" >2019</a></li>
+									<li><a href="#">2020</a></li>
+									<li><a href="#" >2021</a></li>
+								</ul>
+							</div>
+						</div>
+					   </div>
+					  </div>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 xuanshang">
+					  <div class="panel">
+					  	<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 title">
+								<ul>
+									<li class="first "><a href="#tab1">悬赏榜</a></li>
+									<li><a href="#tab2">今日推荐</a></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="content" id="tab1">
+									<ul >
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊UI </a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										<li><span class="photo"><img src="images/photo.jpg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a><small>[前端]</small><img class="money" src="images/money.png"><b>5</b><button class="btn btn-xs btn-primary">回答</button></li>
+										
+									</ul>
+								</div>
+								<div class="content" id="tab2">
+									<ul >
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										<li><span class="photo"><img src="images/photo1.jpeg"></span><a href="#">求助jQuery UI 具体怎么用啊，全是英文看不懂啊</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					  </div>
+					  <div class="panel">
+					  	<div class="panel-heading">
+					  		<div class="panel-title">
+					  			<div class="t-h">精品课程</div>
+
+					  		</div>
+					  	</div>
+					  	<div class="panel-body">
+					  		<div class="row">
+					  			<div class="col-lg-4 col-md-4 col-sm-4 col-xm-6 course">
+					  				<img src="images/h5.jpg" class="img-responsive hehe">
+					  				<div class="cover">
+					  					<div class="point center-block">
+					  						<span class="center-block"></span>
+					  					</div>
+					  				</div>
+					  			</div>
+					  			
+					  			<div class="col-lg-4 col-md-4 col-sm-4 col-xm-6 course">
+					  				<img src="images/c3.jpg" class="img-responsive
+					  				hehe">
+					  				<div class="cover">
+					  					<div class="point center-block">
+					  						<span class="center-block"></span>
+					  					</div>
+					  				</div>
+					  			</div>
+					  			<div class="col-lg-4 col-md-4 col-sm-4 col-xm-6 course">
+					  				<img src="images/js.jpg" class="img-responsive hehe">
+					  				<div class="cover">
+					  					<div class="point center-block">
+					  						<span class="center-block"></span>
+					  					</div>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="panel">
+					  	<div class="panel-body">
+					  		
+
+  <!-- Nav tabs -->
+							  <ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+								    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">CSS</a></li>
+								    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Javascript</a></li>
+								    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">jQuery</a></li>
+							  </ul>
+
+  <!-- Tab panes -->
+							  <div class="tab-content">
+								    <div role="tabpanel" class="tab-pane active" id="home">
+								    	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+
+
+			        	            	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+			                  
+
+								    </div>
+
+
+
+								    
+								    <div role="tabpanel" class="tab-pane" id="profile">
+								    	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+
+
+			        	            	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+			                  
+								    </div>
+
+
+
+								    <div role="tabpanel" class="tab-pane" id="messages">
+								    	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+
+
+			        	            	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+			                  
+								    </div>
+
+
+
+								    <div role="tabpanel" class="tab-pane" id="settings">
+								    	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+
+
+			        	            	<div class="panel-heading">
+			        		            	<h4 class="panel-title" id="rt"><span class="glyphicon glyphicon-flash"></span>问题：<a href=""><small><i>水多深？</i></a><a class="pull-right" href="">--- <span class="glyphicon glyphicon-user"></span>FEEL</a></small></h4>
+
+			        	            	</div>
+			        	          		<div class="panel-body">
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">你猜</p>
+			        						<p><a href=""><span class="glyphicon glyphicon-user"></span> F-E-E-L</a>说：</p>
+			        						<p class="z-i">you guess  i   guess</p>
+			        						<button class="btn btn-xs btn btn-primary pull-right">评论<tton>
+			        	            	</div>
+			                  
+								    </div>
+							  </div>
+
+
+					  	</div>
+					  </div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 tips">
+
+					  <div class="panel">
+					  	<div class="panel-body">
+
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 title">
+							    <ul><li class="t-h"><a>前端资讯快车</a></li></ul>
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="panel-group" id="accordion">
+									  <div class="panel panel-default">
+									    <div class="panel-heading">
+									      <h4 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" 
+									          href="#collapseOne">
+									           React.js 初学者应该知道的9件事
+									        </a>
+									      </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in">
+									      <div class="panel-body">
+									       <p>本文假定你已经有了一下基本的概念。如果你不熟悉 component、props 或者 state 这些名词，你最好先去阅读下官方起步和手册。下面的代码示例我将使用 JSX 作演示，因为使用 JSX 语法写组件更为简洁，也更具表达力。 <br>1.React.js 只是一个视图库 <br>
+									       2.组件尽可能的小 <br>
+									       3. 写函数式组件<br> 
+									       4. 写无状态组件<br> 
+									       5.使用 Redux.js<br>
+									       6.一直使用propTypes  </p>
+
+									       		<button class="btn btn-default pull-right btn-sm">阅读详情</button>
+									      </div>
+									    </div>
+									  </div>
+									  <div class="panel panel-default">
+									    <div class="panel-heading">
+									      <h4 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" 
+									          href="#collapseTwo">
+									          全栈 JavaScript 程序员的崛起
+									        </a>
+									      </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      <p> 在以前，JavaScript程序员就是前端开发者的同义词，永远与浏览器绑在一起。 
+		但那已是昨日往事。Node.js的崛起开启了一个新纪元，从此，JavaScript 程序员可能不再是被局限于浏览器的前端开发者了。 
+
+		相比其他高级程序语言，作为一名 JavaScript 程序员，你可以在更多的平台上发挥才能。但是现在让我们将目光放在两大主流领域上：浏览器和服务端。</p> 
+												<button class="btn btn-default pull-right btn-sm">阅读详情</button>
+									      </div>
+									    </div>
+									  </div>
+									  <div class="panel panel-default">
+									    <div class="panel-heading">
+									      <h4 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" 
+									          href="#collapseThree">
+									           前端开发者不得不知的 ECMAScript 6 十大特性
+									        </a>
+									      </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse">
+									      <div class="panel-body">
+									       <p>ES6（ECMAScript2015）的出现，无疑给前端开发人员带来了新的惊喜，它包含了一些很棒的新特性，可以更加方便的实现很多复杂的操作，提高开发人员的效率。 <br>
+									       Default Parameters（默认参数） in ES6 
+											Template Literals （模板文本）in ES6 
+											Multi-line Strings （多行字符串）in ES6 
+											Destructuring Assignment （解构赋值）in ES6 
+											Enhanced Object Literals （增强的对象文本）in ES6 
+											Arrow Functions （箭头函数）in ES6 
+											Promises in ES6 
+											Block-Scoped Constructs Let and Const（块作用域构造Let and Const） 
+											Classes（类） in ES6 
+											Modules（模块） in ES6 </p>
+
+											<button class="btn btn-default pull-right btn-sm">阅读详情</button>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<img  class="img-responsive ad" src="images/ad.jpg">
+							</div>
+						</div>
+
+					  	</div>
+					  </div>
+
+					</div>
+					
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*default*/ 
+			$(".content").hide();
+			$(".title li:first").addClass("active");
+			$(".content:first").show();
+
+			/*click*/
+			$(".title li").click(function(){
+				$(".title li").removeClass("active");
+				$(this).addClass("active");
+				$(".content").hide();
+				var conTab=$(this).find("a").attr("href");
+				$(conTab).fadeIn();
+
+			}) 
+
+
+
+		 $(".course").mouseover(function(){
+		 	$(this).find(".cover").css("display","block");
+		 })
+		 $(".course").mouseout(function(){
+		 	$(this).find(".cover").css("display","none");
+		 })
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>石头剪刀布</title>
+	<meta charset="utf-8">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/game.css">
+</head>
+<body>
+	<div class="wrap">
+		<!-- 头部 -->
+		<div class="header">
+			<h1>石头剪刀布</h1>
+		</div>
+		<!-- 中部 -->
+		<div class="main">
+			<!-- 用户选择 -->
+			<div class="user-select">
+				<h2>用户选择CHOOSE</h2>
+				<form id="userSelect">
+					<label>石头<input type="radio" name="select" value="石头"></label>
+					<label>剪刀<input type="radio" name="select" value="剪刀"></label>
+				    <label>布<input type="radio" name="select" value="布"></label>
+			    </form>
+			    <p  class="p1" id="userDisplay"></p>
+			    <button id="confirmButton">确定</button>
+			</div>
+			<!-- 电脑选择 -->
+			<div class="computer-select">
+				<h2>电脑选择CHOOSE</h2>
+				<p  class="p2" id="computerDisplay"></p>
+			</div>
+			<!-- 结果 -->
+			<div class="result">
+				<h2>本轮结果RESULT</h2>
+				<p  class="p3" id="resultDisplay"></p>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<button id="repeatButton">再来一次</button>
+		</div>	
+	</div>
+	<!-- JavaScript -->
+	<script src="../javascript/game.js"></script>
+</body>
+</html>

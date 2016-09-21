@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas小女孩</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<canvas id="myCanvas" width="500px" height="700px" style="border: 2px solid #000;display:block;margin: 0 auto;">
+		
+	</canvas>
+	<script type="text/javascript">
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(270,150,80,0,2*Math.PI,true);
+		ctx.stroke();
+		ctx.fillStyle="yellow";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(270,150,80,1.2*Math.PI,1.8*Math.PI,false);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(230,140,20,0,2*Math.PI,true);
+		ctx.stroke();
+		ctx.fillStyle="white";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(220,140,10,0,2*Math.PI,true);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(310,140,20,0,2*Math.PI,true);
+		ctx.stroke();
+		ctx.fillStyle="white";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(300,140,10,0,2*Math.PI,true);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.moveTo(270,170);
+		ctx.lineTo(260,180);
+		ctx.lineTo(280,180);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		
+
+		ctx.beginPath();
+		ctx.arc(270,185,30,0.1*Math.PI,0.9*Math.PI,false);
+		ctx.stroke();
+		ctx.fillStyle="red";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(270,243,13,0,2*Math.PI,false);
+		ctx.stroke();
+		ctx.fillStyle="red";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.moveTo(260,233);
+		ctx.lineTo(200,233);
+		ctx.lineTo(200,265);
+		ctx.lineTo(260,253);
+		ctx.stroke();
+		ctx.fillStyle="red";
+		ctx.fill();
+
+		
+		
+		ctx.stroke();
+		ctx.fillStyle="red";
+		ctx.fill();
+
+		
+
+
+
+
+		ctx.beginPath();
+		ctx.moveTo(280,233);
+		ctx.lineTo(340,233);
+		ctx.lineTo(340,265);
+		ctx.lineTo(280,253);
+		ctx.stroke();
+		ctx.fillStyle="red";
+		ctx.fill();
+
+
+		ctx.beginPath();
+		ctx.moveTo(210,100);
+		ctx.lineTo(150,70);
+		ctx.lineTo(180,40);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.moveTo(330,100);
+		ctx.lineTo(390,70);
+		ctx.lineTo(360,40);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.moveTo(240,250);
+		ctx.lineTo(180,500);
+		ctx.lineTo(370,500);
+		ctx.lineTo(300,250);
+
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+		ctx.closePath();
+
+
+		ctx.beginPath();
+		ctx.fillStyle="yellow";
+		ctx.fillRect(230,500,25,60);
+		ctx.fill();
+		ctx.closePath();
+
+		ctx.beginPath();
+		ctx.arc(243,560,12.5,0,1*Math.PI,false);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+		
+		ctx.beginPath();
+		ctx.fillStyle="yellow";
+		ctx.fillRect(290,500,25,60);
+		
+		ctx.fill();
+		ctx.closePath();
+
+
+		ctx.beginPath();
+		ctx.arc(303,560,12.50,0,1*Math.PI,false);
+		ctx.stroke();
+		ctx.fillStyle="black";
+		ctx.fill();
+
+
+
+		
+
+
+
+
+	</script>
+</body>
+</html>

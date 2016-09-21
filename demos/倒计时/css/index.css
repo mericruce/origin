@@ -1,0 +1,28 @@
+#box{
+	width: 500px;
+	height: 100px;
+	background-color: #F00;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 auto;
+	
+}
+#time{
+	width: 500px;
+	height: 200px;
+	background-color: #F00;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px auto 0;
+	
+}
+#ttime{
+	font-size: 25px;
+	color: yellow;
+}
+#tttime{
+	font-size: 25px;
+	color: yellow;
+}

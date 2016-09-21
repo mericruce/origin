@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>下拉菜单</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<script type="text/javascript" src="js/menu.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".one li").mousemove(function(){
+				$(this).find("ul").slideDown("2000");
+			})
+			$(".one li").mouseleave(function(){
+				$(this).find("ul").slideUp("fast");
+			})
+		})
+	</script>-->
+</head>
+<body>
+	<div id="simple">
+		<ul class="one">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">课程介绍</a>
+				<ul id="mnuList">
+					<li><span></span></li>
+					<li class="haha"><a href="#">html </a></li>
+					<li><a href="#">css </a></li>
+					<li><a href="#">javascript </a></li>
+					<li><a href="#">jQuery </a></li>
+				</ul>
+			</li>
+			<li><a href="#">学习课程</a>
+				<ul>
+					<li class="haha"><span></span></li>
+					<li><a href="#">html </a></li>
+					<li><a href="#">css </a></li>
+					<li><a href="#">javascript </a></li>
+					<li><a href="#">jQuery </a></li>
+				</ul>
+			</li>
+			<li><a href="#">经典案例</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+
+
+
+
+	<div id="change">
+
+		<ul>
+			<li><a href="#">首页<span>Home</span></a></li>
+			<li><a href="#">课程中心<span>Course</span></a></li>
+			<li><a href="#">学习大厅<span>Study</span></a></li>
+			<li class="last"><a href="#">关于我们<span>About</span></a></li>
+		</ul>
+
+	</div>
+
+
+
+
+	<div id="three">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">课程介绍</a>
+				<ul >
+					<li ><a href="#">html </a>
+						<ul>
+							<li><a href="#">body </a></li>
+							<li><a href="#">title </a></li>
+							<li><a href="#">link </a></li>
+							<li><a href="#">script </a></li>
+						</ul>
+					</li>
+					<li><a href="#">css </a>
+						<ul>
+							<li><a href="#">body </a></li>
+							<li><a href="#">title </a></li>
+							<li><a href="#">link </a></li>
+							<li><a href="#">script </a></li>
+						</ul>
+					</li>
+					<li><a href="#">javascript </a></li>
+					<li><a href="#">jQuery </a></li>
+				</ul>
+			</li>
+			<li><a href="#">学习课程</a></li>
+			<li><a href="#">经典案例</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+</body>
+</html>

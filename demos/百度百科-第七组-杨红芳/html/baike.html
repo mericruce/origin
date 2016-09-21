@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>百科人物</title>
+	<meta charset="utf-8">
+	<link href="../css/baike.css" type="text/css" rel="stylesheet">
+	 <link rel="shortcut  icon" type="image/x-icon" href="../images/zql.ico" media="screen"  />
+	<script src="../javascript/baike.js" type="text/javascript" ></script>
+	<script language="javascript" src="../javascript/jquery.min.js"></script>
+</head>
+<body>
+	<a href="javascript:;" class="topbtn" id="topbtn"><i class="iconfont">&#xe600</i></a>
+
+
+
+	<div id="cover"></div>
+	<div id="login">
+		<div class="close">
+			<p class="loginin">请登录您的账号</p>
+		</div>
+		<input type="text" class="name" placeholder="用户名/邮箱/手机号">
+		<input type="password" class="pwd" placeholder="密码">
+		<input type="submit" id="denglu" value="登录">
+	</div>
+
+
+
+	<div id="head">
+		<div class="top">
+			<a class="topp" href="#" id="xdenglu" style="color: rgb(63, 137, 236);">登录</a>
+			<a class="topp" href="register.html" style="color: rgb(63, 137, 236);">注册</a>
+			<a class="topp" href="#">商城</a>
+			<a class="topp" href="#">消息</a>
+			<a class="topp" href="#">百度首页</a>
+		</div>
+		<div class="top1">
+			<img class="logo" src="../images/bd_logo1.png"/>
+			<div class="top2">
+				<a class="topp2" href="http://www.baidu.com">新闻</a>
+				<a class="topp2" href="http://www.baidu.com">网页</a>
+				<a class="topp2" href="http://www.baidu.com">贴吧</a>
+				<a class="topp2" href="http://www.baidu.com">知道</a>
+				<a class="topp2" href="http://www.baidu.com">图片</a>
+				<a class="topp2" href="http://www.baidu.com">视频</a>
+				<a class="topp2" href="http://www.baidu.com">地图</a>
+				<a class="topp2" href="http://www.baidu.com">百科</a>
+				<a class="topp2" href="http://www.baidu.com">文库</a><br/>
+				<input class="search" type="text"/><button class="btn">进入词条</button>
+				<button class="btn">搜索词条</button>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="navc">
+			<ul>
+				<li><a class="nav1" href="http://www.baidu.com">首页</a></li>
+				<li><a class="nav1" href="http://www.baidu.com">分类</a>
+					<ul>
+						<li><a href="#">哈哈哈</a></li>
+						<li ><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+					</ul>
+
+				</li>
+				<li><a class="nav1" href="http://www.baidu.com">特色百科</a>
+					<ul>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+					</ul>
+				</li>
+				<li><a class="nav1" href="http://www.baidu.com">用户</a>
+					<ul>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+					</ul>
+
+
+				</li>
+				<li><a class="nav1" href="http://www.baidu.com">权威百科</a>
+					<ul>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+					</ul>
+
+
+				</li>
+				<li><a class="nav1" href="http://www.baidu.com">手机百科</a>
+					<ul>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+						<li><a href="#">哈哈哈</a></li>
+					</ul>
+
+
+
+				</li>
+				<li><a class="nav1" href="game.html" target="_blank">游戏娱乐</a></li>
+			</ul>
+		</div>
+			
+	</div>
+	<div style="clear: both;"></div>
+	<!--<div class="navd">
+		<div class="nave">
+				
+				<dl>
+					<dt><a href="http://wwww.baidu.com">首页</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="http://wwww.baidu.com">分类</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="http://wwww.baidu.com">特色百科</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="http://wwww.baidu.com">用户</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="http://wwww.baidu.com">权威合作</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="http://wwww.baidu.com">手机百科</a></dt>
+				</dl>
+		</div>
+				
+	</div>-->
+	<div id="container">
+		<div class="con">
+			<div class="main">
+				<div class="mainc">
+					<div class="tt">
+						<a class="ttt" href="/">添加</a>
+						<a class="ttt" href="/">收藏</a>
+						<a class="ttt" href="/">点赞</a>
+						<a class="ttt" href="/">转发</a>
+					</div>
+					<div class="theme">
+						<p class="topic">张起灵</p>
+						<button class="wr">编辑</button>
+					</div>
+					<p class="para"><strong>张起灵</strong>，南派三叔作品《盗墓笔记》里面的<b class="ff">灵魂人物</b>，本书主角之一，铁三角的精神领袖。一出现就给所有人安全感与希望，几乎无所不能。</p>
+					<p class="para">作者南派三叔在访谈中提到，小哥是全书中最善良最智慧最神秘的角色，此外，在盗笔原文中，小哥数十年间一直保持着年轻的容貌，据作者称其为“长生的完整体”，故不会发生诸如“尸变”之类的长生后遗症，可谓是完美的长生者。</p>
+					<p class="para">其全名中“起灵”二字，在古代有撤除亡者灵位之意，且张家历代族长皆称“张起灵”，由此推测张家族长亦负责将亡故的族人入殓于张家古楼之中。（且负责群葬的迁徙）</p>
+					<p class="para">神秘的张家人世代守护长白山青铜门和“终极”的秘密，因前任族长在家族内斗中身亡，导致族长交接出现断代。又因祖传的失魂症，张起灵每隔一段时间就会遗忘过去，因此他在接任族长后只能不断穿梭于各大古墓中寻找缺失的线索和记忆，在延续千年的迷局中摸索前行。</p>
+					<p class="para">2005年立秋后的8月17日（此日期为南派三叔工作室公布），作为张家末代族长，在老九门背弃轮流守护“终极”约定的困境中，张起灵肩负起这一使命，只身在长白山青铜门后独守十年。2015年8月17日，即十年后，张起灵正式回归，与吴邪，王胖子等人重聚，后铁三角暂居于福建雨村。</p>
+				
+					<div class="info">
+						<dl class="info_l">
+							<dt>中文名</dt><dd>张起灵（原名不详）</dd>
+							<dt>外文名</dt><dd>Kylin Zhang（中文译音）</dd>
+							<dt>其他名称</dt><dd>闷油瓶、小哥、哑巴张、阿坤、族长、领头人、黑面神、大张哥、小张、影帝张、闷王、职业失踪人员、瓶仔</dd>
+							<dt>&nbsp;</dt>
+							<dt>&nbsp;</dt>
+							<dt>登场作品</dt><dd>《盗墓笔记》系列 <br>
+											《藏海花》系列 
+											《沙海》系列<br> 
+											《三日静寂》<br>作者微信番外短篇<br> 
+											《麻将》短篇番外</dd>
+							<dt>&nbsp;</dt>
+							<dt>&nbsp;</dt>
+							<dt>&nbsp;</dt>
+							<dt>&nbsp;</dt>
+							<dt>生    日</dt><dd>最初设定为天蝎座，生于阳光明媚的十一月，此后南派三叔在访谈中说就以8月17日作为张起灵的生日</dd>
+						</dl>
+						<dl class="info_r">
+							<dt>年龄</dt><dd>100岁左右</dd>
+							<dt>性别</dt><dd>男</dd>
+							<dt>血型</dt><dd>不详（拥有奇特的麒麟血）</dd>
+							<dt>身高</dt><dd>180cm</dd>
+							<dt>体重</dt><dd>不详（身材匀称，肌肉密度惊人）</dd>
+							<dt>三围</dt><dd>不详</dd>
+							<dt>职业</dt><dd>盗墓者</dd>
+							<dt>地位</dt><dd>张家现任族长，最后一任张起灵</dd>
+							<dt>名字来历</dt><dd>张起灵为张家族长代号，原名不详</dd>
+							<dt>随身武器</dt><dd>黑金古刀</dd>
+							<dt>母亲</dt><dd>白玛（藏医）</dd>
+							<dt>队友</dt><dd>小张哥、张小蛇、吴邪、王胖子等</dd>
+						</dl>
+					</div>
+					<div class="menu">
+						<div class="menu_l">
+						目录
+						</div>
+						<div class="menu_r">
+							<div class="sss">
+								<ul class="uu">
+									<span class="one">1</span><li>角色设定</li>
+								</ul>
+									<ul class="dd">
+										<li>外貌</li>
+										<li>性格</li>
+										<li>技能</li>
+										<li>武器</li>
+										<li>特征</li>
+										
+									</ul>
+							</div>
+							<div class="sss">
+								<ul class="uu">
+									<span class="one">2</span><li>角色人气</li><br>
+									<span class="one">3</span><li>人物经历</li>
+								</ul>
+								<ul class="dd">
+										<li>身世之谜</li>
+										<li>主要经历</li>
+										<li>其他短篇</li>
+										<li>专属地标</li>
+								</ul>
+							</div>
+							<div class="sss">
+								<ul class="uu">
+									<span class="one">4</span><li>人物评价</li>
+								</ul>
+									<ul class="dd">
+										<li>作者南派三叔评价</li>
+										<li>其他人物评价</li>
+										
+									</ul>
+								<ul class="uu">	
+									<span class="one">5</span><li>相关绰号</li><br>
+									<span class="one">6</span><li>精彩段落</li><br>
+									<span class="one">7</span><li>人物原型</li>
+								</ul>
+							</div>
+							<div class="ccc">
+								<ul class="uu">
+									<span class="one">8</span><li>相关视频</li><br>
+									<span class="one">9</span><li>相关音乐</li><br>
+									<span class="one">10</span><li>影视形象</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="detail">
+						<div class="xbt ">
+							<h2 id="item1">角色设定</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3 >外貌</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">容貌俊逸潇洒，气质淡出红尘。</p>
+							<p class="discription">身材匀称，外貌俊逸。</p>
+							<p class="discription">有一双淡然如水的眼睛，好像他的心，根本不存在于这个世界上。</p>
+							<p class="discription">寿命极长，数十年间容颜年轻依旧。</p>
+							<p class="discription">双指奇长，体温升高上身会出现麒麟纹身。</p>
+							<p class="discription"><b>一、容貌</b></p>
+							<p class="discription">眼神淡然，瞳孔幽深，肤白发黑，出尘绝世。</p>
+							<p class="discription">【原文参照】</p>
+							<p class="discription">1. “果然，一双淡然得一点波澜也没有的眼睛正看着我。”——《盗墓笔记·云顶天宫》吴邪</p>
+							<p class="discription">2. “要不咱干脆替他征婚，把他包给一富婆，以小哥的姿色，估计咱还有得赚。”——《盗墓笔记·谜海归巢》胖子</p>
+							<p class="discription">3. “闷油瓶身材匀称，面无表情，穿着西装倒是非常潇洒，惹眼得要命。”——《盗墓笔记·卭笼石影》吴邪</p>
+							<p class="discription">4. “霍仙姑有一米七高，喜欢穿旗袍，皮肤很白，短发。她的气质来自于她的眼神，那是一种出世的眼神，清澈的要命，好像从来没有被世俗污染过，看着她的眼睛，她让你做什么事情你都愿意。想想，这有点像闷油瓶啊！”——《吴邪的私家笔记》</p>
+							<p class="discription">5. “小哥的脸其实相当有特点，他不是一个会淹没在人群中的人。”——《藏海花1》吴邪</p>
+							<p class="discription">6. “幻灯片上出现了一个青年男子的照片，那是一个沉默、冷静、眼神淡如清水的男人，他背着一件东西，平常的走着。他的眼睛看着镜头的方向，显然看见了偷拍的人，但是他毫不在意。”——《沙海3》（网络连载版）黎簇</p>
+							<p class="discription"><b>【作者原话】</b></p>
+							<p class="discription">1. “张起灵是人间看不见的绝色。”——（南派三叔贴吧访谈）</p>
+							<p class="discription">2. “身高180，白净，缄默，黑发黑瞳幽深淡漠，头发半遮眼睛。”——（南派三叔访谈）</p>
+							<p class="discription"><b>二、体型</b></p>
+							<p class="discription">身高180公分，身材匀称，肌肉的纤维密度惊人。</p>
+							<p class="discription">【原文参照】</p>
+							<p class="discription">1. “小哥的体重其实适中，他身体的肌肉含量特别大，所以虽然他的身材看上去很匀称，但是他实际的体重比我上次扶他，感觉上要重得多。”——《盗墓笔记·大结局（下）》吴邪</p>
+							<p class="discription">2. “像小哥这么好的身材，看来也是后天锻炼出来的。”——《盗墓笔记·大结局（下）》胖子</p>
+							<p class="discription">3. “梁湾帮张姓的病人做例行检查的时候，能够接触到他的手臂。他身上的肌肉虽然不是非常夸张，但是其纤维的密集程度已经到了无法理解的地步。”——《沙海1》</p>
+							<p class="discription">4. “即使是运动员身上的肌肉也不大可能有这么高的纤维密度，这是一个看似正常却无比强壮的人，这种肌肉不是一般的训练可以练出来的。她的导师告诉她，这几乎可以被称为意志型的肌肉，是要经过身体和意识长期高度统一的运动才能形成的。”——《沙海1》梁湾</p>
+							<h3 >性格</h3>
+							<p class="discription"><b>1. 沉默少语，淡然出尘</b></p>
+							<p class="discription">1）平时言语不多，被吴邪暗地里称为“闷油瓶”（但在解密分析时话会比较多）。由于他的身世和背负的家族宿命，让他看上去有一种超然物外的气质。</p>
+							<p class="discription">【原文参照】</p>
+							<p class="discription">1）“闷油瓶面色沉静，看不出一丝波澜。”——《盗墓笔记·阴山古楼》</p>
+							<p class="discription">2）“他靠在窗口，也没有看我，眼神如镜，淡得比以前更甚，好像心思已经根本不存在于人世之间。”——《盗墓笔记·谜海归巢》</p>
+							<p class="discription">3）“这个小孩子，一脸恬静，缩在房檐的角上，穿着清布长衫，也就是十几岁的模样。他看着马平川，也没有说话。——《藏海花1》</p>
+							<p class="discription"><b>2. 淡漠疏离，易遭误解</b></p>
+							<p class="discription">表面上看似难以相处，不喜表达情感，容易令对他不了解的人产生误解。</p>
+							<p class="discription">“闷油瓶这种人，如果你不是和他一伙的，和他在一起会感觉很不自在，而且越来越不自在，了解他的人，知道他靠在那里真的只是单纯在打盹，但是不了解的人，就觉得这阴沉的小子一肚子坏水，不知道要怎么折磨自己。”——《沙海4》（网络版）</p>
+							<p class="discription"><b>3.行动力强，执着无畏</b></p>
+							<p class="discription">属于一旦发现线索就会立即付诸于行动的人，执着地穿梭在古墓中寻找遗失的记忆。</p>
+							<p class="discription">【原文参照】</p>
+							<p class="discription">他是一个为了目的而一直往前走的人，就算他走的道路上竖立着无数的倒刺，他也会一直往前走，一路不管任何伤害，直到他所有的肉被倒刺刮掉或者他活着到达目的地。（盗墓笔记大结局）</p>
+							<p class="discription"><b>4.精神领袖，有安全感</b></p>
+							<p class="discription">经常面无表情，但只要脸色一变，通常就意味着将要面临危急的状况。在古墓中，充当团队中精神领袖的角色，其同伴对他的指示言听计从，总能带给身边人十足的安全感。</p>
+							<p class="discription">【原文参照】</p>
+							<p class="discription">“他收敛全部的精神，走得非常小心，只要有一点儿奇怪的声响就要停下等个半天，这个时候他已经完全成了这群人的精神领袖，人人对他言听计从，没有敢说半句废话。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription"><b>5.内心强大，斗中王者</b></p>
+							<p class="discription">自带强大的气场，在倒斗时有“一夫当关，万夫莫开”般的气势。</p>
+							<p class="discription">【原文参照】</p>
+							<p class="discription">1）“马平川觉得很怪异，他竟然和一个十几岁的孩子这么严肃地交谈，而且还被这孩子的气场死死压住了。”——《藏海花1》</p>
+							<p class="discription">2）“孩子很镇定，这种超乎常人的镇定，让马平川越来越不舒服。如果你看到一个看着很弱但又一点不怕你的人，你最好小心一点，因为‘不怕’这种事情是装不出来的。真正的不怕一定来源与内心无比强大的力量。”——《藏海花1》</p>
+							<p class="discription">3）“闷油瓶看到大奎在拿手敲砖墙，忙把他按住了：‘什么都别碰。’那闷油瓶眼神极其锐利,吓得大奎一愣。”——《盗墓笔记·七星鲁王宫》</p>
+							
+						</div>
+					</div>
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item2">角色人气</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						
+						
+						<div class="parag">
+							<p class="discription">◆2011年百度燃战燃王。（7049票胜出，不计手机投票。7070票为网页+手机投票。）</p>
+							<p class="discription">◆个人贴吧会员突破人数39万人,是盗墓笔记中人物角色人气最高的一位。</p>
+							<p class="discription">◆2013年 百度燃战吧夏燃测试赛 两代燃王（2011和2012两届）对决</p>
+							<img class="ml" src="../images/bkpic6.jpg">
+							<p class="discription">【张起灵】盗墓笔记 VS 【宇智波 佐助】火影忍者</p>
+							<p class="discription">在一路落后的情况下，于结束前两小时反超，最终以3462票比3137票胜出<br>充分证明了初代燃王张起灵的强大人气。</p>
+							
+							<p class="discription">◆2014年在天天排行网中名列国产二次元男神排行榜第一。</p>
+							<p class="discription">◆2014年在百田圈圈举办的二次元男神战中名列第一。（2014年7月4日至2014年8月20日）</p>
+							<p class="discription">◆2015年在百度名人堂活动中，再度在劣势的情况下一路赶追并反超，最终名列第一，<br>成为粉丝送给小哥回归的一份大礼。</p>
+							<p class="discription">◆2015年在百度贴吧“书战吧”举办的第一届男神战比赛中获得冠军。</p>
+							<p class="discription">◆2015年再次在天天排行网中名列国产二次元男神排行榜第一，成功夺得二连冠。</p>
+							
+						</div>
+					</div>
+
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item3">人物经历</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3 >身世之谜</h3>
+						
+						<div class="parag">
+							<p class="discription" >     上世纪某一个寒冷的冬天，张起灵的养父从尼泊尔归来，把尚在襁褓的他带回张家。这个身世如谜的婴儿成了张家的异类，无人知晓他的生父是谁，只知道他的母亲名叫白玛，是一名女藏医。</p><br>
+							<img class="ml" src="../images/bkpic7.jpg">
+							<p class="discription">在他出生的那一年，张家人打开了周穆王的龙纹石盒，取出了其中沉睡了<br>3000年之久的死婴。而张起灵，却被当作那个婴儿的替代品，成为巩固张家人信仰的工具。<br>之后真相败露，张家开始败落，幼年张起灵亦被弃如敝履，和其他身世凄惨的张家孤儿一样<br>，被封闭在一个独立的院落中，接受严苛的训练，无法与外界接触。</p><br>
+
+							<p class="discription">根据《藏海花1》的推测，张起灵之后很可能被某个没有子嗣的张家人认养<br>，在各个古墓中做一些暗无天日的工作。在他八九岁的时候，张家人为了寻找前任族长<br>的信物，将拥有麒麟宝血的他带入泗州古城的地下，强行放血驱虫，让他清理被淤泥<br>掩埋的通道，甚至进入成人无法通过的狭小空间摸出明器。</p><br>
+							<p class="discription">和傲慢的本家小孩不同，张起灵没有亲生父母的庇护，养父又在他童年时亡故。只身在这黑暗、阴冷、复杂的家族中成长，让他逐渐形成了沉默寡言的性格。然而，在张家分崩离析，大厦将倾之际，这个被族人忽视、利用的孩子，却临危受命，毅然肩负起张家族长的重任。</p>
+							
+							
+							
+						</div>
+					</div>
+
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item4">人物评价</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3 >作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3 >其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item5">相关绰号</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3 >作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3 >其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item6">精彩段落</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3 >作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3 >其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item7">人物原型</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3 >作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3>其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item8">相关视频</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3>作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3>其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item9">相关音乐</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3>作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3>其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="xbt">
+							<h2 id="item10">影视形象</h2>
+							<img class="line" src="../images/line.png"/>
+
+						</div>
+						<h3>作者南派三叔评价</h3>
+						<img class="ml" src="../images/bkpic2.jpg">
+						<div class="parag">
+							<p class="discription">1.这是一个强大得犹如神佛一般的男人。有他在的篇幅中，我总是能写得格外轻松，<br>因为只要他在身边，就能为你挡下一切的灾难和痛苦。</p><br>
+							<p class="discription">他没有言语，不会开心，不会悲痛，他总是像一个瓷娃娃一样，默默地站在那里<br>淡淡地看着一切。然而，你知道，他是关心着你的。永远没有任何一个人可以像他那样<br>给你带来那么多的安全感。</p><br>
+							<p class="discription">然而，不知道为什么，我在书写这个男人的各种举动时，心中总是泛着一股深深的伤感。</p><br>
+							<p class="discription">正如他自己所说的，他是一个没有过去和未来的人，他和世界的唯一的联系，似乎并没有多少价值。他不知道自己来自何方，不知道自己将要去往哪里。他只知道，自己在这个世界上，有一件他必须要做的事情。</p><br>
+							<p class="discription">“你能想象吗？有一天，当你从一个山洞中醒来，在你什么都不知道，疑惑地望着四周的时候，你的身上已经有了一个你必须肩负的责任，你没有权利去看沿途的风景，不能去享受朋友和爱人，你人生中的所有美好的东西，在你有意识的一刻，已经对你没有了意义。”</p><br>
+							<p class="discription">2.写盗墓笔记的十年里，我对于文字的驾驭有了很大的提高，很多东西，我可以翻来覆去的运用。</p>
+							<p class="discription">然而，我可能此生再也写不出三日静寂。</p><br>
+							<p class="discription">盗墓笔记并没有那么厉害，在我为这本书工作的时候，<b>我深刻的感觉到了这一点。我深深的为大雪中的张起灵着迷，因为我揣摩了他整整十年，几乎是每一天。但对于大多人来说，时间是不足够的。</b></p><br>
+							<p class="discription">1. 3.“他生命中有过很多重要的人，但没一个能重要过他的宿命”—— 贴吧访谈</p>
+							<p class="discription">4.作者说小哥会喜欢心疼他的女生，但从未结过婚—— 贴吧访谈</p>
+							
+							
+							<h3>其他人物评价</h3>
+							<p class="discription"><b>1. 吴邪评价</b></p>
+							<p class="discription">1）“我一直觉得那闷油瓶不错，因为只要有他在，我就觉得很有安全感。”——《盗墓笔记·七星鲁王宫》</p><br>
+							<p class="discription">2）“这个人平时非常镇静，一旦紧张必然有大事情发生。”——《盗墓笔记·怒海潜沙》</p>
+							<p class="discription">3）“我不得不佩服闷油瓶的思维敏捷，也知道他为什么要往上爬了，这地板和两面墙壁都是青岗石，除非有炸药，否则怎么样也没办法打出个洞来，唯一可能下手的地方，必然只有看不到的天花板。”——《盗墓笔记·怒海潜沙》</p><br>
+							<p class="discription">4）“这人又是典型的自我放逐型人格，心在桃园外，兀自笑春风，谁也进不了他心里。”——《盗墓笔记·阴山古楼》</p><br>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">5）“闷油瓶就是一个奇迹，他的死亡，忽然让人觉得整个世界变得无比真实和残酷。”——《盗墓笔记·大结局（下）》</p>
+							<p class="discription">7）闷油瓶给我整体的感觉，就是这个人不像是个人，他更像是一个很简单的符号。在我的脑海里，除了他救我的那几次，似乎其他的时候，我看到的他都是在睡觉。甚至，我都没有一丝一毫的线索，去推断他的性格。如果是普通人，总是可以从他说话的腔调，或者一些小动作来判断出此人的品性，但是偏偏他的话又少得可怜，也没有什么小动作，简直就是一个一点多余的事情都不做的人，只要他有动作，就必然有事情发生，这也是为什么好几次他的脸色一变，所有人头上就开始冒汗的原因。
+---选自《盗墓笔记·伍》</p>
+							
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="aside">
+				<div class="pics" id="pics">
+					<span id="left"><</span>
+					
+					<img id="zql" src="../images/bkpic1.jpg"/>
+					
+					<span id="right">></span>
+				</div>
+
+
+				<div id="dialogue" >
+					<div class="diab">
+						<ul class="single">
+							<span >1</span><li ><a class="current" href="#item1">角色设定</a></li>
+						</ul>
+						<ul class="double">
+							<span>1.1</span><li>外貌</li><br>
+							<span>1.2</span><li>性格</li><br>
+							<span>1.3</span><li>技能</li><br>
+							<span>1.4</span><li>武器</li><br>
+							<span>1.5</span><li>特征</li>
+						</ul>
+						<ul class="single">
+							<span>2</span><li><a class="" href="#item2">角色人气</a></li><br>
+							<span>3</span><li><a href="#item3">人物经历</a></li>
+						</ul>
+						<ul class="double">
+							<span>3.1</span><li>身世之谜</li><br>
+							<span>3.2</span><li>主要经历</li><br>
+							<span>3.3</span><li>其他短片</li><br>
+							<span>3.4</span><li>专属地标</li>
+							
+						</ul>
+						<ul class="single">
+							<span>4</span><li><a class="" href="#item4">人物评价</a></li>
+							
+						</ul>
+						<ul class="double">
+							<span>4.1</span><li>作者南派三叔评价</li><br>
+							<span>4.2</span><li>其他人物评价</li>
+							
+							
+						</ul>
+						<ul class="single">
+							<span>5</span><li><a class="" href="#item5">相关绰号</a></li><br>
+							<span>6</span><li><a class="" href="#item6">精彩段落</a></li><br>
+							<span>7</span><li><a class="" href="#item7">人物原型</a></li><br>
+							<span>8</span><li><a class="" href="#item8">相关视频</a></li><br>
+							<span>9</span><li><a class="" href="#item9">相关音乐</a></li><br>
+							<span>10</span><li><a class="" href="#item10">影视形象</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div style="clear: both;"></div>
+	<div id="footer">
+		<div class="footer1">
+			<ul class="ft1">
+				<li class="first">新手上路</li>
+				<li>成长任务</li>
+				<li>编辑入门</li>
+				<li>编辑规则</li>
+				<li>百度术语</li>
+
+			</ul>
+
+			<ul class="ft1">
+				<li class="first">我有疑问</li>
+				<li>我要质疑</li>
+				<li>我要提问</li>
+				<li>参加讨论</li>
+				<li>意见反馈</li>
+
+			</ul>
+			<ul class="ft1">
+				<li class="first">投诉建议</li>
+				<li>举报不良信息</li>
+				<li>未通过词条申诉</li>
+				<li>投诉侵权信息</li>
+				<li>封禁查询与解封</li>
+
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片测试</title>
+	<!-- css -->
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		figure {
+			margin: 0;
+			padding: 0;
+		}
+		.aside {
+			display: inline-block;
+			float: left;
+			margin: 50px;
+		}
+		.content {
+			display: inline-block;
+			float: left;
+			margin: 50px;
+			border: 2px solid #00f;
+			padding: 20px;
+		}
+		.aside ul {
+			display: inline-block;
+			border: 2px solid #f00;
+			padding: 0 20px 20px;
+		}
+		.aside img {
+			width: 200px;
+			display: block;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		.content img {
+			width: 800px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 父容器 -->
+	<div class="wrap">
+		<!-- 侧边栏 -->
+		<div class="aside">
+			<ul>
+				<li><img src="img/01.jpg" alt="第一张图片"></li>
+				<li><img src="img/02.jpg" alt="第二张图片"></li>
+				<li><img src="img/03.jpg" alt="第三张图片"></li>
+				<li><img src="img/04.jpg" alt="第四张图片"></li>
+			</ul>
+		</div>
+		<!-- 正文区 -->
+		<div class="content">
+			<figure>
+				<img id="display" src="img/01.jpg" alt="这是图片">
+			</figure>
+		</div>
+	</div>
+	<!-- JavaScript -->
+	<script type="text/javascript">
+		var liArray = document.getElementsByTagName('li');
+		for(var index in liArray) {
+			liArray[index].onclick = function(event) {
+				document.getElementById('display').src = event.target.src;
+			}
+		}
+	</script>
+</body>
+</html>

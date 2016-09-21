@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#wrap{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+
+
+#adv{
+	position: relative;
+}
+#adv>li img{
+	width: 100%;
+}
+#adv .focus{
+	display: block;
+}
+#adv li{
+	display: none;
+}
+#adv .key{
+	position:absolute;
+	top:40%;
+	opacity: .6;
+	transition: all 0.8s
+}
+#adv .key:hover{
+	opacity: 1;
+}
+#adv .left{
+	left:15px;
+}
+#adv .right{
+	right:15px;
+}
+
+
+#btn{
+	position: absolute;
+	bottom: 15px;
+	left: 43%;
+}
+#btn li{
+	float: left;
+	width: 20px;
+	height:20px;
+	border-radius: 50%;
+	background-color: #CCC;
+	margin-right: 10px;
+}
+
+#btn .active{
+	background-color:#e83c3c;
+}

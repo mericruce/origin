@@ -1,0 +1,56 @@
+<html> 
+<head> 
+<meta charset="utf-8">
+<style type="text/css"> 
+.popWindow { 
+background-color:#000; 
+width: 100%; 
+height: 100%; 
+left: 0; 
+top: 0; 
+filter: alpha(opacity=50); 
+opacity: 0.8; 
+z-index: 1; 
+position: absolute; 
+
+} 
+.maskLayer { 
+background-color:#000; 
+width: 200px; 
+height: 30px; 
+line-height: 30px; 
+left: 50%; 
+top: 50%; 
+color:#fff; 
+z-index: 2; 
+position: absolute; 
+text-align:center; 
+
+} 
+</style> 
+<script language="javascript" type="text/javascript"> 
+function showDiv() { 
+document.getElementById('popWindow').style.display = 'block'; 
+document.getElementById('maskLayer').style.display = 'block'; 
+} 
+function closeDiv() { 
+document.getElementById('popWindow').style.display = 'none'; 
+document.getElementById('maskLayer').style.display = 'none'; 
+} 
+</script> 
+</head> 
+<body> 
+<div style="background-color: red;width: 100px;height: 100px;
+margin: 0 auto;border-radius: 50px;font-size: 50px;font-weight: bold;">X</div>
+<!--<div onclick="showDiv()" style="display:block; cursor:pointer"> 
+弹出蒙板 
+</div> -->
+<div id="popWindow" class="popWindow" style="display: block;"> 
+</div> 
+<div id="maskLayer" class="maskLayer" style="display: block;"> 
+<a href="#" onclick="closeDiv()" style="cursor:pointer;text-decoration: none;"> 
+关闭蒙板 
+</a> 
+</div> 
+</body> 
+</html> 

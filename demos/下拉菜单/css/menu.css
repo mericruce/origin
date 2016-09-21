@@ -1,0 +1,186 @@
+*{
+	margin:0;
+	padding: 0;
+}
+ul,li,ol{
+	list-style: none;
+
+}
+a{
+	text-decoration: none;
+}
+
+
+
+
+#simple{
+	width: 590px;
+	height: 40px;
+	background-color: #eee;
+	margin: 0 auto;
+}
+#simple ul li{
+	float: left;
+	position: relative;
+	
+	line-height: 40px;
+	text-align: center;
+}
+#simple ul li a{
+	color: black;
+	padding: 0 30px;
+	height: 40px;
+	display: block;
+}
+#simple ul li a:hover{
+	color: white;
+	background-color: black;
+
+}
+#simple ul li ul{
+	display: none;
+	position: absolute;
+	top:40px;
+	left:0px;
+	margin-top: 10px;
+	height: 0;
+	
+}
+#simple ul li:hover ul {
+	
+	
+	display: block;
+	
+}
+#simple ul li ul li{
+	float: none;
+
+}
+#simple ul li ul span{
+	width: 0;
+	height: 0;
+	margin-top: -10px;
+	margin-left: 50px;
+	display: block;
+	border-width: 0 10px 10px 10px;
+	border-style: solid;
+	border-color:  transparent transparent #eee transparent;
+}
+
+#simple ul li ul li a{
+	padding: 0 22px;
+	background-color: #eee;
+
+}
+#simple ul li ul li a:hover{
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+#change{
+	width: 404px;
+	height: 40px;
+
+	margin:50px auto 0;
+	border-bottom: 5px solid red;
+	overflow: auto;
+}
+#change li{
+	float:left;
+	height:40px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 1px;
+	width: 100px;
+
+}
+#change li a{
+	display:block;
+	background-color: black;
+	color: white;	
+}
+#change li .last{
+	margin-right: 0;
+}
+#change li a span{
+	display: none;
+}
+#change li a:hover span{
+	display: block;
+	background-color: red;
+}
+#change li a:hover{
+	margin-top: -40px;
+} 
+
+
+
+
+
+
+#three{
+	height: 40px;
+	width: 505px;
+	margin: 50px auto 0;
+}
+#three ul li{
+	float:left;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	width: 100px;
+	margin-right: 1px; 
+}
+#three ul li a{
+	display: block;
+	background-color: black;
+	color: white;
+}
+#three ul li a:hover{
+	background-color: red;
+}
+#three ul li ul{
+	display: none;
+	
+}
+#three ul li:hover ul{
+	display: block;
+	
+	margin-top: 1px;
+}
+#three ul li:hover ul li{
+	margin-top: 1px;
+	position:relative;
+}
+#three ul li ul li a{
+	background-color: #555;
+}
+#three ul li ul li a:hover{
+	background-color: pink;
+
+}
+#three ul li:hover ul li ul{
+	display: none;
+}
+#three ul li ul li:hover ul{
+	display: block;
+	position:absolute;
+	top:-2px;
+	left: 101px;
+
+}
+#three ul li ul li ul li a{
+	background-color: #888;
+}
+#three ul li ul li ul li :hover{
+	background-color: yellow;
+}

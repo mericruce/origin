@@ -1,0 +1,222 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+table{
+	margin-top: 50px;
+	width: 80%;
+	height: 600px;
+	background-color: #eee;
+	margin: 0 auto;
+
+}
+#cardTable thead th{
+	border-bottom: 2px solid #333;
+	height: 50px;
+}
+#cardTable tbody td{
+	text-align:center;
+	border-bottom: 2px solid #333;
+}
+
+.count .count-input{
+	width: 30px;
+	height: 25px;
+	border: 1px solid #333;
+	text-align: center;
+}
+.count .reduce,.add{
+	width: 25px;
+	height: 27px;
+	background-color: #666;
+	color: white;
+	line-height: 25px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+.price,.subtotal{
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+}
+.check{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.goods{
+	text-align: center;
+}
+.goods img{
+	border: 0;
+	
+}
+.goods span{
+	display: inline-block;
+	
+}
+.foot{
+	width:80%;
+	height: 60px;
+	background-color: #eee;
+	margin: 20px auto 0;
+	line-height: 60px;
+
+}
+.foot .select-all{
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.foot .check-all{
+	vertical-align: middle;
+}
+.foot a {
+	color: #555;
+	left: left;
+	font-weight: bold;
+	margin-left:30px;
+	text-decoration: none;
+}
+.foot a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.closing{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	width: 100px;
+	text-align:center;
+	background-color: #999;
+	color: white;
+	font-weight: bold;
+}
+.total{
+	float: right;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.total #priceTotal{
+	color: red;
+	font-size: 18px;
+	margin: 0 10px;
+}
+.selected{
+	float: right;
+	margin-right: 70px;
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+#selectedTotal{
+	color: red;
+	font-size: 18px;
+	margin: 0 10px;
+}
+.up{
+	position: absolute;
+	top:-3px;
+	right:-30px;
+	display: block;
+}
+.down{
+	position: absolute;
+	right: -30px;
+	top:5px;
+	display: none;
+}
+.on{
+	background-color: #ddd;
+}
+.foot .selected {
+    cursor: pointer;
+}
+.foot .selected .arrow {
+    position: relative;
+    top:-60px;
+    left: 120px;
+    margin-left: 3px;
+}
+.foot .selected .down {
+    position: relative;
+    top:3px;
+    left: 0px;
+    display: none;
+}
+ .show .selected .down {
+    display: inline;
+}
+ .show .selected .up {
+    display: none;
+}
+.foot .selected:hover .arrow {
+    color: red;
+}
+.foot .selected-view {
+    width: 80%;
+    border: 1px solid #c8c8c8;
+    position: absolute;
+    height: auto;
+    background: #ffffff;
+    z-index: 9;
+    bottom: 48px;
+    left: 135px;
+    display:none;
+}
+.show .selected-view {
+    display: block;
+}
+.foot .selected-view div{
+    height: auto;
+}
+.foot .selected-view .arrow {
+    font-size: 16px;
+    line-height: 100%;
+    color:#c8c8c8;
+    position: absolute;
+    right: 330px;
+    bottom: -9px;
+}
+.foot .selected-view .arrow span {
+    color: #ffffff;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+}
+#selectedViewList {
+    padding: 20px;
+    margin-bottom: -20px;
+}
+#selectedViewList div{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 80px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+#selectedViewList div span {
+    display: none;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background: RGBA(0,0,0,.5);
+    cursor: pointer;
+}
+#selectedViewList div:hover span {
+    display: block;
+}
+span.delete {
+	display: block;
+	cursor: pointer;
+}

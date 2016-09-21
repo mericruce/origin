@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin:0;
+
+}
+body{
+	background-color:#FF7256;
+}
+ul,li{
+	list-style:none;
+}
+
+.top{
+	width: 100%;
+	height: 500px;
+
+	
+	position:relative;
+}
+.top .career{
+	font-size:45px;
+	color:white;
+	font-weight:bold;
+	text-shadow:2px 2px 8px black;
+	position:absolute;
+	top:30px;
+	right:100px;
+}
+.top .photo{
+	width:230px;
+	height:230px;
+	border:10px solid white;
+	border-radius:50%;
+	float:left;
+	background:url(../images/photo.jpg);
+}
+
+.top .personinfo{
+	width:500px;
+	height:300px;
+	float:left;
+	background-color:white;
+	box-shadow:5px 2px 15px black;
+	position:absolute;
+	top:150px;
+	left:270px;
+
+}
+.top .personinfo li{
+	padding:5px 40px;
+	display:inline-block;
+	font-size:20px;
+	font-family:'微软雅黑';
+
+}
+.top .personinfo li:nth-child(1){
+	margin-top:15px;
+}
+.top .personinfo li:nth-child(4){
+	padding-left:80px;
+}
+.myskill{
+	position:absolute;
+	
+	width:450px;
+	height:300px;
+	top:150px;
+	left:800px;
+	text-align:center;
+}
+.myskill p{
+	font-size:15px;
+}
+
+.about .title{
+	
+	text-align: center;
+	position:relative;
+	
+	width:200px;
+	height:150px;
+	background:url(../images/ad.png) no-repeat top left;
+}
+.title i{
+	font-size: 30px;
+	color:DarkOrange;
+	font-weight:bold;
+	position:absolute;
+	top:60px;
+	left:30px;
+	
+
+}
+.about .article{
+	text-align: center;
+	font-size: 18px;
+}
+.detail{
+	padding-bottom: 10px;
+}
+
+.works{
+	margin-bottom:40px;
+	position:relative;
+}
+.cover{
+	position:absolute;
+	top:5px;
+	left:20px;
+	background-color:#ccc;
+	opacity:.8;
+	width:0;
+	height:0;
+	margin:0 auto;
+	display:none;
+
+
+	
+}
+.works:hover .cover {
+	display:block;
+
+}
+.info{
+	text-align:center;
+}
+.glyphicon{
+	font-size:50px;
+	margin-top:50px;
+}
+.info p{
+	font-size:20px;
+	margin-top:20px;
+	margin-bottom:40px;
+	font-family:'微软雅黑';
+}
+form textarea{
+	margin-top:30px;
+}
+.footer{
+	width:100%;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	background-color:#333;
+	font-size:20px;
+	color:white;
+	margin-top:20px;
+}
